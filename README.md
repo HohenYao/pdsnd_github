@@ -6,7 +6,8 @@ Version 1.1
 Add CITY_DATA 2020-03-24 23:49
 Version 1.2
 Add month_list and DayOfWeek_list 2020-03-24 23:58
-
+Version 1.3
+Modify the input 2020-03-29 0:00
 ### Project Title
 BikeShare Project
 
