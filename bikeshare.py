@@ -64,8 +64,8 @@ def get_filters():
     
     while True:
         try:
-            city = input('Enter the city you want to check, Chicago, New York City or Washington: ').lower()
-            if CITY_DATA.get(city):
+            city = input('Enter the city you want to check, Chicago, New York City or Washington: ')
+            if CITY_DATA.get(city).lower():
                 break
             else:
                 print("You only can input 'Chicago, New York City or Washington' ")
@@ -78,9 +78,8 @@ def get_filters():
             print('\nAttempted Input\n')            
             
     while True:
-        filter_type = input('Would you like to filter the data by month, day, both, or not at all? Type "none" for no time filter.\n').lower()
-
-        if filter_type == 'none':
+        filter_type = input('Would you like to filter the data by month, day, both, or not at all? Type "none" for no time filter.\n')
+        if filter_type.lower() == 'none':
             month='all'
             day='all'
             print("filter type is: {} ".format(filter_type))
