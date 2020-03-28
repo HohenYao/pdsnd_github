@@ -4,6 +4,8 @@ First created this project and README file.
 2020-02-17
 Version 1.1
 Add CITY_DATA 2020-03-24 23:49
+Version 1.2
+Add month_list and DayOfWeek_list 2020-03-24 23:58
 
 ### Project Title
 BikeShare Project
