@@ -64,8 +64,8 @@ def get_filters():
     
     while True:
         try:
-            city = input('Enter the city you want to check, Chicago, New York City or Washington: ').lower()
-            if CITY_DATA.get(city):
+            city = input('Enter the city you want to check, Chicago, New York City or Washington: ')
+            if CITY_DATA.get(city).lower():
                 break
             else:
                 print("You only can input 'Chicago, New York City or Washington' ")
@@ -78,9 +78,8 @@ def get_filters():
             print('\nAttempted Input\n')            
             
     while True:
-        filter_type = input('Would you like to filter the data by month, day, both, or not at all? Type "none" for no time filter.\n').lower()
-
-        if filter_type == 'none':
+        filter_type = input('Would you like to filter the data by month, day, both, or not at all? Type "none" for no time filter.\n')
+        if filter_type.lower() == 'none':
             month='all'
             day='all'
             print("filter type is: {} ".format(filter_type))
@@ -275,7 +274,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 '''
-#this is used for the first 5 records
+#this is used for the first 10 records
 def show_info(df):
     """Displays several detail on bikeshare users."""
 
@@ -284,7 +283,7 @@ def show_info(df):
     
     #show several detail
     info = df.head()
-    record_num = 5
+    record_num = 10
 
     print("There are five records for your reference :\n {}".format(info))
     
@@ -294,7 +293,7 @@ def show_info(df):
             if (read_more == 'no' or read_more == 'n'):
                 break
             elif (read_more == 'yes' or read_more == 'y'):
-                record_num +=5
+                record_num +=10
                 info = df.head(record_num)
                 print("There are some records for your reference :\n {}".format(info))
             else:
