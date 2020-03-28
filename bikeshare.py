@@ -274,7 +274,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 '''
-#this is used for the first 5 records
+#this is used for the first 10 records
 def show_info(df):
     """Displays several detail on bikeshare users."""
 
@@ -283,7 +283,7 @@ def show_info(df):
     
     #show several detail
     info = df.head()
-    record_num = 5
+    record_num = 10
 
     print("There are five records for your reference :\n {}".format(info))
     
@@ -293,7 +293,7 @@ def show_info(df):
             if (read_more == 'no' or read_more == 'n'):
                 break
             elif (read_more == 'yes' or read_more == 'y'):
-                record_num +=5
+                record_num +=10
                 info = df.head(record_num)
                 print("There are some records for your reference :\n {}".format(info))
             else:
