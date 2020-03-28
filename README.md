@@ -8,6 +8,8 @@ Version 1.2
 Add month_list and DayOfWeek_list 2020-03-24 23:58
 Version 1.3
 Modify the input 2020-03-29 0:00
+Version 2.0
+Modify the number for each day 2020-03-29 0:06
 ### Project Title
 BikeShare Project
 

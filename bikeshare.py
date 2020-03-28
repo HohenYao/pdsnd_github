@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 #add month_list, DayOfWeek_list by Hohen
 month_list = ['january', 'feburary', 'march', 'april', 'may', 'june']
-DayOfWeek_list = { 1:'sunday', 2:'monday', 3:'tuesday', 4:'wednesday', 5:'thursday', 6:'friday', 7:'saturday'}
+DayOfWeek_list = { 7:'sunday', 1:'monday', 2:'tuesday', 3:'wednesday', 4:'thursday', 5:'friday', 6:'saturday'}
 
 def check_month():
         # TO DO: get user input for month (all, january, february, ... , june)
